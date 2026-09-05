@@ -30,6 +30,7 @@ jobs:
     name: 🚢 Release to latest/candidate
     needs: get-architectures
     runs-on: ubuntu-latest
+    timeout-minutes: 1440
     environment: "Candidate Branch"
     strategy:
       matrix:
